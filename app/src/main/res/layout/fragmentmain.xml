@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/fragmentmain_framgent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"></FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/fragmentmain_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:visibility="gone"></LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentmain_but"
+        class="com.bn.yfc.fragmentmain.ButonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></fragment>
+</LinearLayout>

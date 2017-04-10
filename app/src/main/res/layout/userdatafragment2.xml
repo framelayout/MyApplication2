@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bn.yfc.base.BaseLinLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userdata2_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@drawable/userdata_lin2" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:weightSum="2">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="总交易额"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/userdata2_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@drawable/userdata_lin2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="总用户量"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/userdata2_usernum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@drawable/userdata_lin2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="总商家"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/userdata2_store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@drawable/userdata_lin2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="总司机"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/userdata2_orders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.bn.yfc.base.BaseLinLayout>

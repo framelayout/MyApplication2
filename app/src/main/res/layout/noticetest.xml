@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/notice_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="通知栏1"
+        android:minHeight="30dp"
+        android:onClick="OnClickOne"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/notice_tow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="通知栏2"
+        android:minHeight="30dp"
+        android:onClick="OnClickTwo"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/notice_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="通知栏3"
+        android:minHeight="30dp"
+        android:onClick="OnClickThree"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/notice_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="通知栏4"
+        android:minHeight="30dp"
+        android:onClick="OnClickFour"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorGreen">#00FF00</color>
+    <color name="colorBlue">#0000FF</color>
+    <color name="colorTransparemt">#00000000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGray">#C0C0C0</color>
+    <color name="colorSkyBlue">#78a5ff</color>
+    <color name="colorTextGray">#e0e1e3</color>
+    <color name="colorTransparemtGray">#f1f4f4</color>
+    <color name="colorMainButtonGray">#9b9b9b</color>
+    <color name="colorLogBack">#486399</color>
+    <color name="colorLogBack2">#344870</color>
+    <color name="colorLogaText">#d7dade</color>
+    <color name="colorTransparemtGrays">#C0C0C0</color>
+    <color name="colorTextBlack">#303030</color>
+    <color name="header_background">#ffdedede</color>
+    <color name="colortextblue">#79d1fd</color>
+    <color name="colortextblue1">#5b7ec2</color>
+    <color name="colornewstextcolor">#b3b4b4</color>
+    <color name="colorwindowcolor">#3b86f4</color>
+    <color name="colorRedColors">#ff7877</color>
+</resources>

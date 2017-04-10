@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/heanactivitylayou"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linbacktop_selector"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/balance2_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前账户: "
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linbacktop_selector"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:text="提现金额:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/balance2_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.8"
+            android:background="@drawable/edittextback"
+            android:hint="请输入提现金额"
+            android:inputType="numberDecimal"
+            android:minLines="3"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparemtGray"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现到银行卡"
+            android:textColor="@color/colorBlack"
+            android:textColorHighlight="@color/colorTextGray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/balance2_bankicon"
+            android:layout_width="46dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/mybank" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/balance2_bankicon"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <Spinner
+                android:id="@+id/balance2_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/linbackcen_normal"></Spinner>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="60dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:id="@+id/balance2_but"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buton_selector"
+            android:text="立即提现"
+            android:textColor="@drawable/textcolor_white" />
+
+    </LinearLayout>
+</LinearLayout>

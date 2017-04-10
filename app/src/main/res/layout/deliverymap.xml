@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deliverymap_linshowpop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/headlinlayou"></include>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.bn.yfc.map.HorizontalListView
+                android:id="@+id/delivermapview_holistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/deliverymap_expand"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/expand_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.amap.api.maps.TextureMapView
+            android:id="@+id/deliverymap_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"></com.amap.api.maps.TextureMapView>
+    </LinearLayout>
+
+</LinearLayout>

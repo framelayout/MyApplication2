@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/heanactivitylayou"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/linbackcen_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/login_user_icon"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="1dp"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:id="@+id/recover_user_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="账号:"
+                android:textColor="@color/colorLogaText"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/recover_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/recover_user_text"
+                android:background="@color/colorTransparemt"
+                android:gravity="center_vertical"
+                android:hint="请输入账号"
+                android:inputType="number"
+                android:paddingLeft="4dp"
+
+                android:textColor="@color/colorGray"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/recover_user_clean"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/clean_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/linbackcen_selector"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/registerd_code"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp">
+
+                <EditText
+                    android:id="@+id/recover_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:background="@color/colorTransparemt"
+                    android:gravity="center_vertical"
+                    android:hint="请输入验证码"
+                    android:textColorHint="@color/colorTextGray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <Button
+                android:id="@+id/recover_code_but"
+                android:layout_width="90dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/verification_selector"
+                android:text="获取验证码"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/linbackcen_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/login_pass_icon"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="1dp"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:id="@+id/recover_pass_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="新密码:"
+                android:textColor="@color/colorLogaText"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/recover_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/recover_pass_text"
+                android:background="@color/colorTransparemt"
+                android:gravity="center_vertical"
+                android:hint="请新输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="4dp"
+                android:textColor="@color/colorGray"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/recover_pass_clean"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/clean_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:id="@+id/recover_but"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/buton_selector"
+            android:text="提交"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

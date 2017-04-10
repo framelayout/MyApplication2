@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/auditinterface_lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/headlinlayou"></include>
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/auditinterface_tabstrip"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            app:pstsDividerColor="@color/colorWhite"
+            app:pstsIndicatorColor="@color/colorSkyBlue"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsShouldExpand="true"
+            app:pstsUnderlineColor="@color/colorWhite"
+            app:pstsUnderlineHeight="0dp"></com.astuetz.PagerSlidingTabStrip>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/auditinterface_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/auditinterface_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/auditinterface_logbut"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/verification_selector"
+            android:text="登录"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</LinearLayout>

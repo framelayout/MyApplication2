@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/heanactivitylayou"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <EditText
+            android:id="@+id/comment_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittextback"
+            android:gravity="left|top"
+            android:hint="请输入您对此次服务的评价"
+            android:inputType="textMultiLine"
+            android:minHeight="30dp"
+            android:minLines="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/comment_bar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1.0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/comment_but"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/buton_selector"
+            android:text="提交"
+            android:textColor="@drawable/textcolor_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

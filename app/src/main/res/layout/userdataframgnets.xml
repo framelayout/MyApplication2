@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/headlinlayou"></include>
+
+    <com.bn.yfc.base.BaseViewPager
+        android:id="@+id/userdatafragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.bn.yfc.base.BaseViewPager>
+</LinearLayout>

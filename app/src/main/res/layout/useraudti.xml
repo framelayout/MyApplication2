@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/heanactivitylayou"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/useraudit_all"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:background="@drawable/audit_but_onclick"
+                android:text="全部"
+                android:textColor="@color/colorSkyBlue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/useraudit_geton"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:background="@null"
+                android:text="进行中"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/useraudit_nego"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:background="@null"
+                android:text="待协商"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/useraudit_crrayout"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:background="@null"
+                android:text="已完成"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/useraudit_evaluate"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:background="@null"
+                android:text="待评价"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.bn.yfc.base.RefreshLayout
+            android:id="@+id/useraudit_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/useraudit_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/colorTransparemt"></ListView>
+        </com.bn.yfc.base.RefreshLayout>
+    </LinearLayout>
+</LinearLayout>
